@@ -24,7 +24,6 @@ type
     procedure btnresetClick(Sender: TObject);
     procedure btnsimpanClick(Sender: TObject);
     procedure cbxktpChange(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
 
   public
@@ -68,12 +67,6 @@ begin
 
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
-begin
-  //btnreset.click;
-  btnresetclick(sender);
-end;
-
 procedure TForm1.btnresetClick(Sender: TObject);
 begin
   edit1.text:='';
@@ -81,9 +74,6 @@ begin
   rgjeniskelamin.itemindex:=-1;
   cbkota.itemindex:=-1;
   cbkota.text:='';
-  cbxfoto.checked:=false;
-  cbxktp.checked:=false;
-  cbxijazah.checked:=false;
 end;
 
 end.
